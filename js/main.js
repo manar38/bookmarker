@@ -1,7 +1,7 @@
 var siteName = document.getElementById("siteName");
 var siteUrl = document.getElementById("siteUrl");
 var box = document.getElementById("box");
-var urlRegex = /^(w{3}\.)?\w+(\.com|\.org|\.co|\.net){1}$/;
+var urlRegex = /^(https?:\/\/)?(www\.)?[\w\-]+(\.[\w\-]+)+([\/#?]?.*)$/;
 var nameRegex = /^\w{3,}(\s\w+)*$/;
 var bookmarksArr = [];
 if (localStorage.getItem("bookmarks") !== null) {
